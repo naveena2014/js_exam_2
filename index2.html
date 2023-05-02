@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+const Integers =function(x,y,max){
+    const ans =new Set();
+    for(let i=0;(i<=20)&&(Math.pow(x,i));i++){
+for(let j=0;(j<=20)&&(Math.pow(y,j));j++){
+const v =Math.pow(x,i) + Math.pow(y,j);
+if(v<=max)ans.add(v)
+}
+    }
+    return Array.from(ans);
+}
+console.log(Integers(12))
+
+
+
+       
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
